@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Al Faisal Chowdhury - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="wrapper">
+            <div class="logo">
+                <i class="fa-solid fa-user"></i>
+                <div class="logo-text">Abdullah Al Faisal Chowdhury</div>
+            </div>
+            <nav id="navbar">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Close Button (in small screens) -->
+                    <div id="close" class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="portfolio-wrapper">
+            <h2 class="portfolio-title">Portfolio</h2>
+            <p class="portfolio-subtitle">Here are some of the projects I have worked on:</p>
+    
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/port-1.png" alt="Project 1">
+                        <h3>City Bank - Banking Dashboard Simulation </h3>
+                        <p>The application simulates basic banking operations, allowing users to log in, deposit funds, withdraw money, and view real-time balance updates through dynamic DOM manipulation.</p>
+                        <a href="project_details.html?title=Project%201&live=https://faisalchowdhury777.github.io/City-Bank/&github=https://github.com/FaisalChowdhury777/City-Bank" class="btn">
+                            View Project
+                        </a>
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <img src="images/port-2.png" alt="Project 2">
+                        <h3>My First Portfolio Website </h3>
+                        <p>My first portfolio website built with HTML, CSS, and JavaScript to showcase my skills, projects, and achievements while improving my frontend development skills.</p>
+                        <a href="project_details.html?title=Project%202&live= https://faisalchowdhury777.github.io/web-portfolio/&github=https://github.com/FaisalChowdhury777/web-portfolio" class="btn">View Project</a>
+
+                    </div>
+            
+                    <div class="swiper-slide">
+                        <img src="images/port-3.png" alt="Project 3">
+                        <h3>Nike React Infinity Run 2 – Shoe Store Website</h3>
+                        <p>A responsive e-commerce landing page designed for a Nike shoe store using HTML, CSS, and Bootstrap. The website features product sections, shoe cards, pricing, and a clean modern layout to showcase casual and formal footwear collections.</p>
+                        <a href="" class="btn">View Project</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/port-4.png" alt="Project 3">
+                        <h3>E-commerce Product Showcase Website</h3>
+                        <p>A Python app that helps you manage screen time and take regular breaks for better productivity and health, featuring a tkinter interface and sound alerts with pygame.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/port-5.png" alt="Project 3">
+                        <h3>E-Commerce Store</h3>
+                        <p>A dynamic e-commerce website built using JavaScript and HTML, 
+                            featuring product listings, a shopping cart, and service worker integration for offline functionality and improved performance.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    
+                </div>
+            
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <br><br><br><br>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </main>
+    
+    
+
+    <footer>
+        <p>&copy; 2026 Abdullah Al Faisal Chowdhury. All rights reserved.</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 1,  // Show 1 slide at a time
+        spaceBetween: 20, 
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2000, // Auto-slide every 3 seconds
+            disableOnInteraction: false,
+        },
+    });
+
+
+    const navLinks = document.querySelector('.navlinks');
+        const hamburger = document.querySelector('.hamburger');
+        const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.add('active');
+    document.body.classList.add('nav-open'); // Add class to body
+        });
+
+    closeBtn.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    document.body.classList.remove('nav-open'); // Remove class from body
+        });
+        
+</script>
+
+</body>
+</html>
