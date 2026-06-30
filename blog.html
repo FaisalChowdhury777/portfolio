@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sakibul Hasan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="wrapper">
+            <div class="logo">
+                <i class="fa-solid fa-user"></i>
+                <div class="logo-text">Abdullah Al Faisal Chowdhury</div>
+            </div>
+            <nav id="navbar">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Close Button (in small screens) -->
+                    <div id="close" class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+   
+    
+    <section class="blog">
+
+         <!-- spain  -->
+    
+         <div class="blog-section">
+            <h2 class="section-title">🇪🇸 Exploring Palma de Mallorca, Spain</h2>
+        
+            <div class="meta-line">
+                <span class="date">05.01.2025</span>
+            </div>
+        
+            <p class="blog-description">
+                A memorable journey through Palma de Mallorca, discovering the beauty of the island,
+                Mediterranean landscapes, historic streets, and the unique culture of Spain.
+            </p>
+        
+            <div class="blog-content">
+        
+                <!-- Image Slider for Palma de Mallorca -->
+                <div class="slider-container" data-slider="spain">
+                    <div class="slider-images">
+                        <img src="images/s1.JPG" alt="Palma de Mallorca city view">
+                        <img src="images/s2.jpg" alt="Beautiful coastline of Mallorca">
+                        <img src="images/s4.jpg" alt="Exploring Palma de Mallorca">
+                    </div>
+        
+                    <button class="slider-btn prev" onclick="moveSlide('spain', -1)">&#10094;</button>
+                    <button class="slider-btn next" onclick="moveSlide('spain', 1)">&#10095;</button>
+                </div>
+        
+                <div class="blog-text">
+                    <p class="blog-details">
+                        Visiting Palma de Mallorca was an unforgettable experience filled with stunning
+                        views, beautiful beaches, and the charm of Spanish culture. From exploring the
+                        historic streets of Palma to enjoying the peaceful Mediterranean atmosphere,
+                        every moment captured the beauty and lifestyle of the island.
+                        
+                        This journey was a perfect combination of adventure, relaxation, and discovery,
+                        creating memories that will always be remembered.
+                    </p>
+                </div>
+        
+            </div>
+        
+            <p class="quote">
+                “Every destination has a story, and Palma de Mallorca was a chapter worth remembering.”
+            </p>
+        </div>
+
+
+
+          <!-- malta -->
+
+        <div class="blog-section">
+            <h2 class="section-title">🇲🇹 Exploring Valletta, Malta</h2>
+        
+            <div class="meta-line">
+                <span class="date">20.10.2024</span>
+            </div>
+        
+            <p class="blog-description">
+                A memorable journey to Valletta, Malta — exploring the historic capital,
+                beautiful coastal views, and the unique charm of Mediterranean culture.
+            </p>
+        
+            <div class="blog-content">
+        
+                <!-- Image Slider for Malta -->
+                <div class="slider-container" data-slider="malta">
+                    <div class="slider-images">
+                        <img src="images/m1.jpg" alt="Valletta Malta city view">
+                        <img src="images/m2.jpg" alt="Malta coastline view">
+                    
+                    </div>
+        
+                    <button class="slider-btn prev" onclick="moveSlide('malta', -1)">&#10094;</button>
+                    <button class="slider-btn next" onclick="moveSlide('malta', 1)">&#10095;</button>
+                </div>
+        
+                <div class="blog-text">
+                    <p class="blog-details">
+                        Visiting Valletta was an unforgettable experience filled with history,
+                        architecture, and breathtaking Mediterranean scenery. Walking through the
+                        old streets of Malta’s capital, discovering its historic landmarks, and
+                        enjoying the sea views created a perfect balance of exploration and
+                        relaxation.
+                        
+                        The combination of culture, beautiful landscapes, and the peaceful island
+                        atmosphere made this journey a special memory.
+                    </p>
+                </div>
+        
+            </div>
+        
+            <p class="quote">
+                “Every place has its own story, and Valletta was a journey through history and beauty.”
+            </p>
+        </div>
+
+        <!-- Bremerhaven -->
+
+        <div class="blog-section">
+            <h2 class="section-title">🇨🇿 Exploring Prague, Czech Republic</h2>
+        
+            <div class="meta-line">
+                <span class="date">15.05.2025</span>
+            </div>
+        
+            <p class="blog-description">
+                A beautiful journey to Prague, exploring the historic heart of the Czech Republic,
+                its stunning architecture, charming streets, and unforgettable atmosphere.
+            </p>
+        
+            <div class="blog-content">
+        
+                <!-- Image Slider for Prague -->
+                <div class="slider-container" data-slider="prague">
+                    <div class="slider-images">
+                        <img src="images/c1.jpg" alt="Prague city view">
+                        <img src="images/c2.jpg" alt="Historic streets of Prague">
+                   
+                    </div>
+        
+                    <button class="slider-btn prev" onclick="moveSlide('prague', -1)">&#10094;</button>
+                    <button class="slider-btn next" onclick="moveSlide('prague', 1)">&#10095;</button>
+                </div>
+        
+                <div class="blog-text">
+                    <p class="blog-details">
+                        Visiting Prague was an amazing experience filled with history, culture, and
+                        breathtaking views. Walking through the old town, exploring the beautiful
+                        architecture, and experiencing the unique atmosphere of the city made the
+                        journey unforgettable.
+                        
+                        From the historic streets to the famous landmarks, Prague showed a perfect
+                        combination of tradition, beauty, and modern European life.
+                    </p>
+                </div>
+        
+            </div>
+        
+            <p class="quote">
+                “Some cities are visited, but some cities leave a lasting memory.”
+            </p>
+        </div>
+        
+        
+
+        <!-- Inssbruk -->
+        <div class="blog-section">
+            <h2 class="section-title">🇭🇺 Exploring Budapest, Hungary</h2>
+        
+            <div class="meta-line">
+                <span class="date">18.05.2025</span>
+            </div>
+        
+            <p class="blog-description">
+                A memorable journey to Budapest, discovering the beauty of Hungary’s capital,
+                its historic landmarks, stunning architecture, and the charm of the Danube River.
+            </p>
+        
+            <div class="blog-content">
+        
+                <!-- Image Slider for Budapest -->
+                <div class="slider-container" data-slider="budapest">
+                    <div class="slider-images">
+                        <img src="images/h1.jpg" alt="Budapest city view">
+                        <img src="images/h2.jpg" alt="Danube River Budapest">
+                        <img src="images//h3.jpg" alt="Historic Budapest landmark">
+                    </div>
+        
+                    <button class="slider-btn prev" onclick="moveSlide('budapest', -1)">&#10094;</button>
+                    <button class="slider-btn next" onclick="moveSlide('budapest', 1)">&#10095;</button>
+                </div>
+        
+                <div class="blog-text">
+                    <p class="blog-details">
+                        Visiting Budapest was a wonderful experience filled with beautiful views,
+                        rich history, and unforgettable moments. Exploring the streets, admiring
+                        the architecture, and walking along the Danube River revealed the unique
+                        character of the city.
+                        
+                        The combination of culture, history, and the vibrant atmosphere made
+                        Budapest one of the most memorable destinations of the journey.
+                    </p>
+                </div>
+        
+            </div>
+        
+            <p class="quote">
+                “A city full of history, beauty, and moments worth remembering.”
+            </p>
+        </div>
+
+        
+    
+
+     
+
+        <!-- india -->
+
+        <div class="blog-section">
+            <h2 class="section-title">🇮🇳 Exploring the Beauty of Kolkata, Sikkim & Darjeeling</h2>
+        
+            <div class="meta-line">
+                <span class="date">15.12.2024</span>
+            </div>
+        
+            <p class="blog-description">
+                A beautiful journey through Kolkata, Sikkim, and Darjeeling — experiencing the
+                cultural richness of the city, the peaceful charm of the Himalayas, and the
+                breathtaking landscapes of Northeast India.
+            </p>
+        
+            <div class="blog-content">
+        
+                <!-- Image Slider for India -->
+                <div class="slider-container" data-slider="india">
+                    <div class="slider-images">
+                        <img src="images/i1.jpg" alt="Kolkata city view">
+                        <img src="images/i2.jpg" alt="Sikkim mountain landscape">
+                        <img src="images/i3.JPG" alt="Darjeeling Himalayan view">
+                    </div>
+        
+                    <button class="slider-btn prev" onclick="moveSlide('india', -1)">&#10094;</button>
+                    <button class="slider-btn next" onclick="moveSlide('india', 1)">&#10095;</button>
+                </div>
+        
+        
+                <div class="blog-text">
+                    <p class="blog-details">
+                        This journey through Kolkata, Sikkim, and Darjeeling was an unforgettable
+                        combination of culture, adventure, and nature. The trip started in Kolkata,
+                        where I explored the vibrant city life, historic places, and rich traditions.
+        
+                        Continuing towards Sikkim and Darjeeling, the experience changed from busy
+                        city streets to peaceful mountains, beautiful valleys, and breathtaking
+                        Himalayan views. The natural beauty, local culture, and calm environment
+                        made every moment special.
+        
+                        This journey was a perfect reminder of how travel connects us with different
+                        places, people, and unforgettable experiences.
+                    </p>
+                </div>
+        
+            </div>
+        
+            <p class="quote">
+                “From the energy of the city to the silence of the mountains — every place tells a story.”
+            </p>
+        </div>
+
+    </section>
+
+ 
+    
+    
+
+   
+    <div class="pagination-container">
+        <button id="prev-page" onclick="changePage(-1)">« Previous</button>
+        <span id="page-numbers"></span>
+        <button id="next-page" onclick="changePage(1)">Next »</button>
+    </div>
+    
+    
+
+
+
+
+
+    <script>
+        // Track slide index for each slider (Added "india" slider)
+let slideIndexes = {
+    spain:0,
+    malta:0,
+    prague:0,
+    budapest:0,
+   
+    india: 0
+};
+
+// Function to move slides for each slider
+function moveSlide(sliderName, n) {
+    const slider = document.querySelector(`[data-slider="${sliderName}"] .slider-images`);
+    const slides = document.querySelectorAll(`[data-slider="${sliderName}"] .slider-images img`);
+    const totalSlides = slides.length;
+    
+    if (!slider || slides.length === 0) return; // Prevent errors if no images
+
+    const slideWidth = slides[0].clientWidth;
+    slideIndexes[sliderName] += n;
+
+    // Loop the slides seamlessly
+    if (slideIndexes[sliderName] >= totalSlides) {
+        slideIndexes[sliderName] = 0;
+    } else if (slideIndexes[sliderName] < 0) {
+        slideIndexes[sliderName] = totalSlides - 1;
+    }
+
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(-${slideIndexes[sliderName] * slideWidth}px)`;
+}
+
+// Ensure slides adjust dynamically on window resize
+window.addEventListener("resize", () => {
+    Object.keys(slideIndexes).forEach(sliderName => {
+        const slider = document.querySelector(`[data-slider="${sliderName}"] .slider-images`);
+        if (slider) {
+            const slideWidth = document.querySelector(`[data-slider="${sliderName}"] .slider-images img`).clientWidth;
+            slider.style.transform = `translateX(-${slideIndexes[sliderName] * slideWidth}px)`;
+        }
+    });
+});
+
+
+        // Pagination Logic
+        let currentPage = 1;
+        const postsPerPage = 2; // Set 2 posts per page
+        const blogSections = document.querySelectorAll('.blog-section');
+        const totalPages = Math.ceil(blogSections.length / postsPerPage);
+
+        // Function to display the correct page
+        function showPage(page) {
+            blogSections.forEach((section, index) => {
+                section.style.display = (index >= (page - 1) * postsPerPage && index < page * postsPerPage) 
+                    ? 'block' 
+                    : 'none';
+            });
+
+            document.getElementById('page-numbers').textContent = `Page ${page} of ${totalPages}`;
+            document.getElementById('prev-page').disabled = (page === 1);
+            document.getElementById('next-page').disabled = (page === totalPages);
+        }
+
+        // Function to change pages
+        function changePage(step) {
+            if ((currentPage + step) > 0 && (currentPage + step) <= totalPages) {
+                currentPage += step;
+                showPage(currentPage);
+            }
+        }
+
+        // Initialize Pagination
+        showPage(currentPage);
+
+
+        const navLinks = document.querySelector('.navlinks');
+        const hamburger = document.querySelector('.hamburger');
+        const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.add('active');
+    document.body.classList.add('nav-open'); // Add class to body
+        });
+
+    closeBtn.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    document.body.classList.remove('nav-open'); // Remove class from body
+        });
+        
+
+    </script>
+    
+    <footer>
+        <p>&copy; 2025 Sakibul Hasan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

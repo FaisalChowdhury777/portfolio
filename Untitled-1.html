@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakibul Hasan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="wrapper">
+            <div class="logo">
+                <i class="fa-solid fa-user"></i>
+                <div class="logo-text">Sakibul Hasan</div>
+            </div>
+            <nav id="navbar">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Close Button (in small screens) -->
+                    <div id="close" class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero-section">
+        <!-- Profile Image -->
+        <div class="hero-image">
+            <img src="images/banner.png" alt="Your Name">
+        </div>
+    
+        <!-- Hero Section Content -->
+        <div class="hero-content">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>I'm a passionate web developer, crafting modern and user-friendly applications. Let's build something amazing together!</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+    
+    <!-- Social Media Section -->
+    <div class="social-bar">
+        <a href="https://github.com/sakibul83" class="github" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sakibul-hasan-703a0531a/" class="linkedin" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/sakibul_hasaan/" class="instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/sakibul.hasan.39108/" class="facebook" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        
+    </div>
+
+    <!-- Banner Section About Yourself -->
+    <section class="personal-intro">
+        <div class="intro-container">
+            <div class="intro-text">
+                <h2>About Me</h2>
+                <p>Hi, I’m Sakibul Hasan, a passionate web developer with a focus on creating clean, efficient, and user-friendly web experiences.</p>
+                <p>Currently, I specialize in **Front-End Development**, and I'm always looking for opportunities to collaborate on exciting projects.</p>
+                <a href="portfolio.html" class="btn">Check Out My Work</a>
+            </div>
+            <div class="intro-image">
+                <img src="images/banner.png" alt="Sakibul Hasan">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Sakibul Hasan. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        // Dynamic Text Animation
+        var typed = new Typed(".dynamic-text", {
+            strings: ["Web Developer", "Frontend Engineer", "Creative Coder"],
+            typeSpeed: 70,
+            backSpeed: 50,
+            loop: true
+        });
+
+        const navLinks = document.querySelector('.navlinks');
+        const hamburger = document.querySelector('.hamburger');
+        const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.add('active');
+    document.body.classList.add('nav-open'); // Add class to body
+        });
+
+    closeBtn.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    document.body.classList.remove('nav-open'); // Remove class from body
+        });
+    </script>
+</body>
+</html>

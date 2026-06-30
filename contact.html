@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sakibul Hasan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="wrapper">
+            <div class="logo">
+                <i class="fa-solid fa-user"></i>
+                <div class="logo-text">Abdullah Al Faisal Chowdhury</div>
+            </div>
+            <nav id="navbar">
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- Close Button (in small screens) -->
+                    <div id="close" class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Icon -->
+            <div id="hamburger" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <div class="contact-wrapper">
+            <!-- Contact Info Section -->
+            <section class="contact-info">
+                <div class="info-header">
+                    <h2>Contact Information</h2>
+                    <p>Have questions? Reach out to me via email or on social media!</p>
+                </div>
+                <div class="info-details">
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Email: <a href="mailto:sakibulhasaann@gmail.com">sakibulhasaann@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Phone: <a href="tel:+4915560481219">+49-15560481219</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Location: Ingolstadt, Germany</p>
+                    </div>
+                </div>
+    
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <h3>Connect with me:</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sakibulhasan" target="_blank" class="social-icon linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/sakibulhasan" target="_blank" class="social-icon github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sakibulhasan/" target="_blank" class="social-icon instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sakibulhasan" target="_blank" class="social-icon facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact Form Section -->
+            <section class="contact-form">
+                <h2>Send a Message</h2>
+                <form action="https://formspree.io/f/xvgzeknr" method="POST" onsubmit="submitForm(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2025 Sakibul Hasan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default form submission
+    
+            // Get form data
+            const form = event.target;
+            const formData = new FormData(form);
+    
+            // Send form data using fetch API
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    alert("Message sent successfully!");
+                    form.reset(); // Clear form fields
+                } else {
+                    alert("Error sending message.");
+                }
+            })
+            .catch(error => alert("Error: " + error));
+        }
+
+        const navLinks = document.querySelector('.navlinks');
+        const hamburger = document.querySelector('.hamburger');
+        const closeBtn = document.querySelector('.close-btn');
+
+    hamburger.addEventListener('click', () => {
+    navLinks.classList.add('active');
+    document.body.classList.add('nav-open'); // Add class to body
+        });
+
+    closeBtn.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    document.body.classList.remove('nav-open'); // Remove class from body
+        });
+
+    </script>
+    
+</body>
+</html>
